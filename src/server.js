@@ -14,6 +14,9 @@ app.use(cors())
 app.get('/admin', (req, res) => {
     res.send('funciono')
 })
+app.get('/', (req, res) => {
+    res.send('funciono')
+})
 app.get('/miembro', (req, res) => {
     res.send('funciono')
 })
@@ -42,6 +45,9 @@ app.get('/exportacion', (req, res) => {
     res.send('funciono')
 })
 app.get('/diseñar-factura', (req, res) => {
+    res.send('funciono')
+})
+app.get('/video-tutorial', (req, res) => {
     res.send('funciono')
 })
 
