@@ -10,9 +10,10 @@ const corsOptions = {
     credentials: true,
     optionSuccessStatus: 200
 }
-app.use(cors())
+// app.use(cors())
+app.use(express.json())
 app.get('/admin', (req, res) => {
-    res.send('funciono')
+    res.json('funciono')
 })
 app.get('/', (req, res) => {
     res.send('funciono')
