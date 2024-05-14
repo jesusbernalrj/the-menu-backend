@@ -6,7 +6,7 @@ const app = express()
 const port = process.env.PORT || 8080
 
 const corsOptions = {
-    origin: [process.env.URL_FRONTED, process.env.URL_FRONTED2],
+    origin: [process.env.URL_FRONTED, process.env.URL_FRONTED2, process.env.FRONTEND_URL4],
     credentials: true,
     optionSuccessStatus: 200
 }
@@ -46,5 +46,5 @@ app.get('/diseñar-factura', (req, res) => {
 })
 
 app.listen(port, () => {
-    console.log('servidor escuchando puerto', + port,process.env.MENSAJE)
+    console.log('servidor escuchando puerto', + port, process.env.URL_FRONTED2)
 })
