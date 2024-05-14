@@ -12,11 +12,11 @@ const corsOptions = {
 }
 // app.use(cors())
 app.use(express.json())
-app.get('/admin', (req, res) => {
-    res.json('funciono')
-})
 app.get('/', (req, res) => {
     res.send('funciono')
+})
+app.get('/admin', (req, res) => {
+    res.json('funciono')
 })
 app.get('/miembro', (req, res) => {
     res.send('funciono')
