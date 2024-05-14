@@ -15,5 +15,5 @@ app.use(cors())
 app.use(express.json())
 app.use('/api', router)
 app.listen(port, () => {
-    console.log('servidor escuchando puerto', + port, process.env.URL_FRONTED2)
+    console.log('servidor escuchando puerto')
 })
