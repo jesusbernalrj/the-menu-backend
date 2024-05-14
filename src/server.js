@@ -1,6 +1,7 @@
 import express from 'express'
 import 'dotenv/config'
 import cors from 'cors'
+import router from './router/router.js'
 const app = express()
 
 const port = process.env.PORT || 8080
@@ -12,46 +13,7 @@ const corsOptions = {
 }
 // app.use(cors())
 app.use(express.json())
-app.get('/', (req, res) => {
-    res.send('funciono')
-})
-app.get('/admin', (req, res) => {
-    res.json('funciono')
-})
-app.get('/miembro', (req, res) => {
-    res.send('funciono')
-})
-app.get('/generar-venta', (req, res) => {
-    res.send('funciono')
-})
-app.get('/about-us', (req, res) => {
-    res.send('funciono')
-})
-app.get('/learn', (req, res) => {
-    res.send('funciono')
-})
-app.get('/choose', (req, res) => {
-    res.send('funciono')
-})
-app.get('/importacion', (req, res) => {
-    res.send('funciono')
-})
-app.get('/meta', (req, res) => {
-    res.send('funciono')
-})
-app.get('/print', (req, res) => {
-    res.send('funciono')
-})
-app.get('/exportacion', (req, res) => {
-    res.send('funciono')
-})
-app.get('/diseñar-factura', (req, res) => {
-    res.send('funciono')
-})
-app.get('/video-tutorial', (req, res) => {
-    res.send('funciono')
-})
-
+app.use('/', router)
 app.listen(port, () => {
     console.log('servidor escuchando puerto', + port, process.env.URL_FRONTED2)
 })
