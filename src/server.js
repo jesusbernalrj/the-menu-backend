@@ -1,10 +1,10 @@
 import express from 'express'
+import 'dotenv/config'
 import cors from 'cors'
 const app = express()
 
 const port = process.env.PORT || 8080
 
-app.use()
 const corsOptions = {
     origin: [process.env.URL_FRONTED, process.env.URL_FRONTED2],
     credentials: true,
@@ -46,5 +46,5 @@ app.get('/diseñar-factura', (req, res) => {
 })
 
 app.listen(port, () => {
-    console.log('servidor escuchando puerto', + port)
+    console.log('servidor escuchando puerto', + port,process.env.MENSAJE)
 })
