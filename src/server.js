@@ -13,7 +13,7 @@ const corsOptions = {
 }
 app.use(cors())
 app.use(express.json())
-app.use('/api', router)
+app.use('/', router)
 app.listen(port, () => {
     console.log('servidor escuchando puerto')
 })
