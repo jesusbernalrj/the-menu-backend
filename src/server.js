@@ -6,7 +6,7 @@ const port = process.env.PORT || 8080
 
 app.use()
 const corsOptions = {
-    origin: [process.env.URL_FRONTED],
+    origin: [process.env.URL_FRONTED, process.env.URL_FRONTED2],
     credentials: true,
     optionSuccessStatus: 200
 }
