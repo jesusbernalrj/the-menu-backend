@@ -10,7 +10,7 @@ const corsOptions = {
     credentials: true,
     optionSuccessStatus: 200
 }
-app.use(cors(corsOptions))
+app.use(cors())
 app.get('/admin', (req, res) => {
     res.send('funciono')
 })
