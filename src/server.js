@@ -11,7 +11,7 @@ const corsOptions = {
     credentials: true,
     optionSuccessStatus: 200
 }
-// app.use(cors())
+app.use(cors())
 app.use(express.json())
 app.use('/', router)
 app.listen(port, () => {
