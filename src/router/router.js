@@ -1,7 +1,13 @@
 import { Router } from 'express'
-
+import path from 'path'
 const router = Router()
+import { fileURLToPath } from 'url';
+const __filename = fileURLToPath(import.meta.url);
 
+const __dirname = path.dirname(__filename);
+router.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'dist', 'index.html'));
+  });
 router.get('/', (req, res) => {
     res.send('funciono')
 })
