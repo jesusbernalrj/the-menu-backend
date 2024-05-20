@@ -5,47 +5,47 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 
 const __dirname = path.dirname(__filename);
-router.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'dist', 'index.html'));
-  });
+// router.get('*', (req, res) => {
+//     res.sendFile(path.join(__dirname, 'dist', 'index.html'));
+//   });
 router.get('/', (req, res) => {
-    res.send('funciono')
+    res.redirect('/')
 })
 router.get('/admin', (req, res) => {
-    res.json('funciono')
+    res.redirect('/admin')
 })
 router.get('/miembro', (req, res) => {
-    res.send('funciono')
+    res.redirect('/miembro')
 })
 router.get('/generar-venta', (req, res) => {
-    res.send('funciono')
+    res.redirect('/generar-venta')
 })
 router.get('/about-us', (req, res) => {
-    res.send('funciono')
+    res.redirect('/about-us')
 })
 router.get('/learn', (req, res) => {
     res.send('funciono')
 })
 router.get('/choose', (req, res) => {
-    res.send('funciono')
+    res.redirect('/choose')
 })
 router.get('/importacion', (req, res) => {
-    res.send('funciono')
+    res.redirect('/importacion')
 })
 router.get('/meta', (req, res) => {
-    res.send('funciono')
+    res.redirect('/meta')
 })
 router.get('/print', (req, res) => {
-    res.send('funciono')
+    res.redirect('/print')
 })
 router.get('/exportacion', (req, res) => {
-    res.send('funciono')
+    res.redirect('/exportacion')
 })
 router.get('/diseñar-factura', (req, res) => {
-    res.send('funciono')
+    res.redirect('/diseñar-factura')
 })
 router.get('/video-tutorial', (req, res) => {
-    res.send('funciono')
+    res.redirect('/video-tutorial')
 })
 
 
